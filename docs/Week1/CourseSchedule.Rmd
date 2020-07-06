@@ -1,0 +1,33 @@
+---
+title: "Schedule"
+author: "Myfanwy Johnston"
+date: "6/22/2020"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Course Schedule
+
+Week 1 (July 6 - 11)
+ - installing and updating R and RStudio, navigating the file system from within R and RStudio, navigating R help, good enough practices for R scripts
+
+Week 2 (July 13 - 18)
+ - data frames, lists, and loading data into R
+
+Week 3 (July 20 - 25)
+ - exploratory data analysis; writing functions
+
+Week 4 (July 27 - Aug 1)
+ - visualization with ggplot2
+
+Week 5 (Aug 3 - 8)
+ - R language fundamentals - deeper dive into scoping, programming, and performance
+
+Week 6 (Aug 10 - 15)
+ - putting it together - project-oriented workflow, reproducibility and unit testing
+
+
