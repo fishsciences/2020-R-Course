@@ -16,11 +16,11 @@ tzs = c("America/Los_Angeles", # should be the same
 # function to tell me what time that corresponds to in other time zones:
 wtii = function(my_times, time_zones) {
   
-  df = data.frame(my_time = my_times)
-  for(i in 1:length(time_zones)) {
-  df[[time_zones[i]]] = with_tz(df$my_time, time_zones[i])}
-  return(df)
-  
+    ans = lapply(time_zones, function(tz) {
+        with_tz(my_times, tz)
+    })
+    names(ans) = time_zones
+    data.frame(my_times = my_times, ans)
 }
 
 
