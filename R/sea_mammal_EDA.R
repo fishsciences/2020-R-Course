@@ -4,7 +4,7 @@
 
 library("ggplot2")
 library(leaflet)
-d = read.csv("data/sea_mammals.csv")
+d = read.csv("data/sea_mammals.csv") # original data source: https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.nodc:0135767
 
 # inspect data
 #-------------------------------------------------------#
