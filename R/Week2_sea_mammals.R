@@ -2,7 +2,7 @@
 # M. Johnston
 # Mon Jul 13 21:39:28 2020 ------------------------------
 
-d = read.csv("data/sea_mammals.csv")
+d = read.csv("data/sea_mammals.csv") # data source: https://data.nodc.noaa.gov/cgi-bin/iso?id=gov.noaa.nodc:0135767
 
 # Ways to view/get more information about your data
 head(d)
