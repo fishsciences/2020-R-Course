@@ -17,3 +17,4 @@ No formal exercises this week - just download and install RStudio, and watch the
 
 Scripting: As shown in this week's [first video](https://youtu.be/R8CvvIiuV0I), download the zipped [course repository](https://github.com/fishsciences/2020-R-Course), unzip it, and open the RStudio project file.  Then run the `sea_mammal_EDA.R` script on your own machine.  Hint: you may need to install the two required libraries; see the code at the end of the video (~22:40) for help on that.
 
+Vectors and data types: download the `vectors.R` script from the R/ folder in the course repository, and work through it in RStudio.  The script will prompt you to try things on your own - a solution script will be posted after office hours next week.
