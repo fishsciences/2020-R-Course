@@ -7,7 +7,8 @@
 #-------------------------------------------------------#
 # creating vectors of different atomic types
 #-------------------------------------------------------#
-v1 = 1     # this creates a numeric/double vector called "v1"
+v1 = 1                    #   this creates a numeric/double vector called "v1"
+
 typeof(v1)
 class(v1)
 length(v1)
@@ -30,6 +31,10 @@ v3 = c("apple", "mango", "kiwi")  # character vector
 #
 
 
+logical_vector = c(TRUE, FALSE, TRUE)
+typeof(logical_vector)
+sum(logical_vector)
+
 #-------------------------------------------------------#
 # coercion of data types
 #-------------------------------------------------------#
@@ -43,7 +48,7 @@ as.numeric(v4)    # if you try to force a character
                   # vector to numeric, you will get NAs 
                   # for all the ones it has trouble with
 
-v5 = c(1.0, TRUE) 
+v5 = c(1.0, TRUE, "TRUE")
 typeof(v5)
 
 v6 = c(1L, TRUE)
@@ -57,7 +62,7 @@ v3[1]         # `[` is a function.  You can look it up with ?`[`
 v3[3]         # this pulls the 3rd element of the vector v3
 length(v3)
 v3[]          # this is the same as asking it for everything
-v3[1:3]       # this asks for elements 1 through 3
+v3[1:length(v3)]       # this asks for elements 1 through 3
 v3[-2]        # this asks for everything EXCEPT the 2nd element
 v3[-c(1,3)]   # here we are subsetting the vector by another vector 
 
