@@ -27,30 +27,30 @@ v2.5 = as.integer(v2)     # or you can use the as.* set of
 v3 = c("apple", "mango", "kiwi")  # character vector
 length(v3)
 
+
 # On your own: how would you convert v2.5 into a character vector?
 #
 
 v4 = c(TRUE, TRUE, FALSE) # logical vector
-
 
 #-------------------------------------------------------#
 # coercion of data types
 #-------------------------------------------------------#
 # what happens if you try to combine the vectors into one vector?
 
-v4 = c(v1, v2, v3)
-typeof(v4)
-length(v4)
+v5 = c(v1, v2, v3)
+typeof(v5)
+length(v5)
 
-as.numeric(v4)    # if you try to force a character 
+as.numeric(v5)    # if you try to force a character 
                   # vector to numeric, you will get NAs 
                   # for all the ones it has trouble with
 
-v5 = c(1.0, TRUE, "TRUE")
-typeof(v5)
-
-v6 = c(1L, TRUE)
+v6 = c(1.0, TRUE, "TRUE")
 typeof(v6)
+
+v7 = c(1L, TRUE)
+typeof(v7)
 
 # On your own: create a vector with elements "ocean", 6.7, 5L, FALSE, and NA.  (name it whatever you like).  What is the type of the resulting vector?  What is its length?
 
@@ -62,8 +62,8 @@ typeof(v6)
 length(v3)
 v3[1]         # `[` is a function.  You can look it up with ?`[`
 v3[3]         # this pulls the 3rd element of the vector v3
-v3[]          # this is the same as asking it for everything
-v3[1:3]       # this asks for elements 1 through 3
+v3[ ]          # this is the same as asking it for everything
+v3[1:length(v3)]       # this asks for elements 1 through 3
 v3[-2]        # this asks for everything EXCEPT the 2nd element
 v3[-c(1,3)]   # here we are subsetting the vector by another vector 
 
