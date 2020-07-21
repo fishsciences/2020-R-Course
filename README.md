@@ -2,7 +2,7 @@
 
 Materials for Summer 2020 Course taught by Myfanwy Johnston for Cramer Fish Sciences.
 
-#### This course has two primary emphases: programming (i.e., prepration for writing your own functions), and plotting (specifically: visualization with ggplot2).
+#### This course has two primary emphases: programming (i.e., preparation in writing your own functions), and plotting (specifically: visualization with ggplot2).
 
 In service of that, we go a bit more in-depth on language fundamentals and function-writing than most beginner R courses.
 
