@@ -19,7 +19,7 @@ Week 2 (July 13 - 18)
  - exploratory data analysis/scripting overview; data structures and indexing
 
 Week 3 (July 20 - 25)
- - loading data into an R session;  writing functions
+ - data frames and lists; summary functions; writing functions
 
 Week 4 (July 27 - Aug 1)
  - visualization with ggplot2
