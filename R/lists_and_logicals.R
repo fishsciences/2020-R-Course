@@ -109,7 +109,9 @@ cod.inf = cod2[cod2$Prevalence == 1, ]
 
 # subsetting to only the observations where the intensity 
 #is equal to or greater than the median:
-cod3 = cod[cod$Intensity >= median(cod$Intensity) , ] 
+# are there NAs?
+sum(is.na())
+cod3 = cod[cod$Intensity >= median(cod$Intensity, na.rm = TRUE) , ] 
 
 # using logicals to ask questions about our data:
 #-------------------------------------------------------#
@@ -123,3 +125,16 @@ length(unique(cod$Sample)) == nrow(cod)  # asks: does each row
 # Hint: there are a lot of different ways to do this.  
 # Try using logical operations to make different subsets,
 # and then use nrow() to compare them.
+
+table(cod$Year)
+
+diff(table(cod$Year))
+
+
+
+
+
+
+
+
+
