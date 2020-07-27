@@ -28,5 +28,11 @@ Vectors and data types: download the `vectors.R` script from the R/ folder, and 
 
 Watch this week's [first video](https://youtu.be/2ynMVYad2HI), and work through the [`lists_and_logicals.R` script](https://github.com/fishsciences/2020-R-Course/blob/8a12c753a34f36cc8c2a103f672a514b5c97f157/R/lists_and_logicals.R) along with it.
 
+Watch this week's [second video](https://youtu.be/8X_ljnlcxtI) and follow along or work through the [accompanying script](https://github.com/fishsciences/2020-R-Course/blob/master/R/working_with_dataframes.R).
+
 Reading: [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf).
+
+### Week 4:
+
+Reading: [Chapter 1](https://ggplot2-book.org/introduction.html) and [Chapter 2](https://ggplot2-book.org/getting-started.html) of Dr. Hadley Wickham's _ggplot2: Elegant Graphics for Data Analysis_ book.
 
