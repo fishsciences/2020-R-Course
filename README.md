@@ -36,6 +36,8 @@ Reading: [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf).
 
 Reading: [Chapter 1](https://ggplot2-book.org/introduction.html) and [Chapter 2](https://ggplot2-book.org/getting-started.html) of Dr. Hadley Wickham's _ggplot2: Elegant Graphics for Data Analysis_ book.
 
+Optional: work through the [factors script](https://github.com/fishsciences/2020-R-Course/blob/a9e54f5cf8aa173e67df34406b65ee51ede00fb1/R/factors.R) on your own.
+
 
 ### Week 5: Intro to functional programming
 
