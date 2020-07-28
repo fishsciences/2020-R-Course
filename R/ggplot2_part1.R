@@ -8,8 +8,6 @@
 library(ggplot2)
 cod = read.csv("data/CodParasite.csv")
 
-# Base plot
-plot(Intensity ~ Depth, data = cod)
 
 # Building a ggplot2 plot: 
 
@@ -42,11 +40,12 @@ ggplot(data = cod,
 ggplot(data = cod, 
        mapping = aes(x = Depth,        
                      y = Intensity))  +
-  geom_point(aes(color = factor(Year), 
+  geom_point(aes(color = factor(Year) , 
                  size = Age),
-             alpha = 0.2)  +
+             alpha = 0.2
+             )  +
   scale_color_manual(values = c("steelblue", "coral", "purple")) +
-  guides(color = "none",              # removes the color legend for Year          
+  guides(color = "none",              # removes the color legend for Year 
          size = guide_legend(title = "Age in Years")) 
 
 #-------------------------------------------------------#
@@ -63,14 +62,16 @@ ggplot(data = cod,
 ggplot(data = cod,                             # 1. data
        mapping = aes(x = Depth,                # 2. mapping
                      y = Intensity)) +    
-  geom_point()                                 # 3. layer
+  geom_point() +
+  geom_line()                                 # 3. layer
 
 
 # data in ggplot(); + mapping in the geom layer()
 #-------------------------------------------------------#
 ggplot(data = cod) +                           # 1. data
   geom_point(mapping = aes(x = Depth,          # 2 & 3. mapping, layer
-                           y = Intensity))
+                           y = Intensity)) +
+  geom_line()
 
 
 # ggplot() initializes; + data and mapping both in the geom layer()
@@ -78,10 +79,11 @@ ggplot(data = cod) +                           # 1. data
 ggplot() +
   geom_point(data = cod,                       # 1, 2, & 3
              mapping = aes(x = Depth,          # are all set
-                           y = Intensity))     # in the first layer
+                           y = Intensity)) +    # in the first layer
+  geom_line(data = cod, aes(x = Depth, y = Intensity))
 
 
-ggplot(data = cod, aes(color = Depth)) +
+ggplot(data = cod, aes(color = Age)) +
   geom_point(mapping = aes(x = Depth,          
                            y = Intensity,
                            color = Prevalence))  # note that when we try to map
