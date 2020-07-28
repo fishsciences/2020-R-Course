@@ -33,7 +33,7 @@ office_hrs = function(week = 3, my_tz = "America/Denver") {
 
 
 # Example: what is the date and time of office hours in Australia next week?
-office_hrs(week = 3, my_tz = "Australia/Hobart")
+office_hrs(week = 3, my_tz = "America/Mexico_City")
 
 
 #-------------------------------------------------------#
