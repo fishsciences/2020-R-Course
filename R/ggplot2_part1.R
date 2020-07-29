@@ -16,22 +16,22 @@ ggplot(data = cod)                          # this initializes a plot
 
 ## 2) aesthetic mapping
 ggplot(data = cod, 
-       mapping = aes(x = Depth,        # we've mapped Depth to x-axis
-                     y = Intensity))           # and Intensity to the y-axis
+       mapping = aes(x = Depth,             # we've mapped Depth to x-axis
+                     y = Intensity))        # and Intensity to the y-axis
 
 
 ## 3) layer(s)
 ggplot(data = cod, 
        mapping = aes(x = Depth,        
                      y = Intensity))  +
-  geom_point()                        # geom_point() adds the observations
+  geom_point()                              # geom_point() adds the observations
 
 
 ## let's add more layers
 ggplot(data = cod, 
        mapping = aes(x = Depth,        
                      y = Intensity))  +
-  geom_point()  +                      # geom_point() adds the observations
+  geom_point()  +                           # geom_point() adds the observations
   geom_line() +
   geom_area()
 
@@ -59,17 +59,17 @@ ggplot(data = cod,
 
 # Data and mapping in ggplot(); + layer() (via a geometry)
 #-------------------------------------------------------#
-ggplot(data = cod,                             # 1. data
-       mapping = aes(x = Depth,                # 2. mapping
+ggplot(data = cod,                               # 1. data
+       mapping = aes(x = Depth,                  # 2. mapping
                      y = Intensity)) +    
   geom_point() +
-  geom_line()                                 # 3. layer
+  geom_line()                                    # 3. layer
 
 
 # data in ggplot(); + mapping in the geom layer()
 #-------------------------------------------------------#
-ggplot(data = cod) +                           # 1. data
-  geom_point(mapping = aes(x = Depth,          # 2 & 3. mapping, layer
+ggplot(data = cod) +                             # 1. data
+  geom_point(mapping = aes(x = Depth,            # 2 & 3. mapping, layer
                            y = Intensity)) +
   geom_line()
 
@@ -77,10 +77,13 @@ ggplot(data = cod) +                           # 1. data
 # ggplot() initializes; + data and mapping both in the geom layer()
 #-------------------------------------------------------#
 ggplot() +
-  geom_point(data = cod,                       # 1, 2, & 3
-             mapping = aes(x = Depth,          # are all set
-                           y = Intensity)) +    # in the first layer
-  geom_line(data = cod, aes(x = Depth, y = Intensity))
+  geom_point(data = cod,                         # 1, 2, & 3
+             mapping = aes(x = Depth,            # are all set
+                           y = Intensity)) +     # in the first layer
+  geom_line(data = cod, aes(x = Depth, 
+                            y = Intensity))
+
+
 
 
 ggplot(data = cod, aes(color = Age)) +
@@ -89,7 +92,7 @@ ggplot(data = cod, aes(color = Age)) +
                            color = Prevalence))  # note that when we try to map
                                                  # color in this point layer,
                                                  # it doesn't work; color is
-                                                 # already mapped to Depth in the
+                                                 # already mapped to Age in the
                                                  # ggplot() call in the first line.
 
 # On Your Own: make a new ggplot scatterplot using the cod data; map the Weight variable to the x-axis, and the Length variable to the y axis.  Create the same plot three times with different arrangements of components, as we did in the code above.
