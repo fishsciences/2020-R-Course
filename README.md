@@ -34,7 +34,7 @@ Reading: [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf).
 
 ### Week 4: Plotting tidy data with ggplot2
 
-Watch this week's [ggplot2 part I video](https://www.youtube.com/watch?v=Dq2g5qNsoiQ) and follow along with the [ggplot2_part1.R script](https://github.com/fishsciences/2020-R-Course/blob/master/R/ggplot2_part1.R)
+Watch this week's [ggplot2 part I video](https://www.youtube.com/watch?v=Dq2g5qNsoiQ) and follow along with the [`ggplot2_part1.R` script](https://github.com/fishsciences/2020-R-Course/blob/master/R/ggplot2_part1.R).  Do the exercises in the script marked "On Your Own".
 
 Reading: [Chapter 1](https://ggplot2-book.org/introduction.html) and [Chapter 2](https://ggplot2-book.org/getting-started.html) of Dr. Hadley Wickham's _ggplot2: Elegant Graphics for Data Analysis_ book.
 
