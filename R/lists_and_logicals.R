@@ -28,7 +28,7 @@ str(my_faves)
 #  Let's make a data frame:
 as.data.frame(my_faves)                   # on your own: why doesn't this coercion work?
 
-cod = read.csv("data/CodParasite.csv")    # cod parasite dataset; in the data/ directory of the R course repo
+cod = read.csv("data/CodParasite.csv", stringsAsFactors = FALSE)    # cod parasite dataset; in the data/ directory of the R course repo
 str(cod)
 
 #-------------------------------------------------------#

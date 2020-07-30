@@ -6,7 +6,7 @@
 
 # install.packages("ggplot2")  # un-comment to install if you haven't yet
 library(ggplot2)
-cod = read.csv("data/CodParasite.csv")
+cod = read.csv("data/CodParasite.csv", stringsAsFactors = FALSE)
 
 
 # Building a ggplot2 plot: 
