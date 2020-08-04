@@ -50,5 +50,6 @@ Reading: [Chapters ten](https://ggplot2-book.org/mastery.html), [eleven](https:/
 Work through the [ggplot2 part II R script](https://github.com/fishsciences/2020-R-Course/blob/master/R/ggplot2_part2.R).
 
 
-### Week 6: Good practices in R; workflow, testing
+### Week 6: Scripting case studies: functions to summarize data, and advanced visualization.
+
 
