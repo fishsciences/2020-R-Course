@@ -19,15 +19,15 @@ Week 2 (July 13 - 18)
  - exploratory data analysis/scripting overview; data structures and indexing
 
 Week 3 (July 20 - 25)
- - data frames and lists; summary functions; writing functions
+ - data frames and lists
 
 Week 4 (July 27 - Aug 1)
  - visualization with ggplot2
 
 Week 5 (Aug 3 - 8)
- - R language fundamentals - deeper dive into scoping and programming
+ - visualization with ggplot2 part II; elementary function writing
 
 Week 6 (Aug 10 - 15)
- - putting it together: workflow, reproducibility and unit testing
+ - scripting case studies: functions to summarize data, and advanced visualization.
 
 
