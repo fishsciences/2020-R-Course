@@ -43,7 +43,7 @@ Optional: work through the [factors script](https://github.com/fishsciences/2020
 
 ### Week 5: Visualization with ggplot2 part II, and elementary function writing
 
-ggplot2 Part II [lecture slides]
+ggplot2 Part II [lecture slides](https://github.com/fishsciences/2020-R-Course/blob/master/docs/Week5/Intro_to_ggplot2_part2_slides.pdf)
 
 Reading: [Chapters ten](https://ggplot2-book.org/mastery.html), [eleven](https://ggplot2-book.org/layers.html), and [twelve](https://ggplot2-book.org/scales.html) of the ggplot2 book.
 
