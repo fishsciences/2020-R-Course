@@ -41,7 +41,13 @@ Reading: [Chapter 1](https://ggplot2-book.org/introduction.html) and [Chapter 2]
 Optional: work through the [factors script](https://github.com/fishsciences/2020-R-Course/blob/a9e54f5cf8aa173e67df34406b65ee51ede00fb1/R/factors.R) on your own.
 
 
-### Week 5: Intro to functional programming
+### Week 5: Visualization with ggplot2 part II, and elementary function writing
+
+ggplot2 Part II [lecture slides]
+
+Reading: [Chapters ten](https://ggplot2-book.org/mastery.html), [eleven](https://ggplot2-book.org/layers.html), and [twelve](https://ggplot2-book.org/scales.html) of the ggplot2 book.
+
+Work through the [ggplot2 part II R script](https://github.com/fishsciences/2020-R-Course/blob/master/R/ggplot2_part2.R).
 
 
 ### Week 6: Good practices in R; workflow, testing
