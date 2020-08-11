@@ -37,10 +37,11 @@
 
 
 # Function writing
-#-------------------------------------------------------#plan for a function that calculates a vector of generic fish "condition" coefficients K, where K_i (the K for an individual fish i) = 1e5*W_i/L_i^3
+#-------------------------------------------------------
+# You'll be writing a function that calculates a vector of generic fish "condition" coefficients K, where K = 1e5*W/L^3
 
-##  Where W_i = Weight of a fish i
-##  where L_i = length of a fish i
+##  Where W = Weight of a fish
+##  where L = length of a fish
 
 
 ## Plan:
