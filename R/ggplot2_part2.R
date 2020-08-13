@@ -8,10 +8,10 @@ library(ggplot2)
 cod = read.csv("data/CodParasite.csv", stringsAsFactors = FALSE)
 
 # Components of a ggplot: default dataset and mappings from variables to aesthetics,
-# **one or more layers**, one scale for each aesthetic mapping, 
+# **one or more layers** 
 # a coordinate system, and a facetting specification.
 
-### ---- Components of a layer: a geom, a stat, a position adjustment
+### ---- Components of a layer: a geom, a stat, a position adjustment, and scales
 
 #-------------------------------------------------------#
 # Build some plots with all components
@@ -47,14 +47,17 @@ ggplot(cod, aes(x = factor(Year))) +                     # no y mapping, because
   geom_bar(aes(fill = factor(Year)),                     # stat = "count"; automatic with
                       show.legend = FALSE)  +            # barplots 
 
-  scale_fill_brewer(palette = "Set2")
+  scale_fill_manual(values = c("dodgerblue", "purple", "yellow4"))
 
 
-## barplot, with stat = "identity" and position = "stack"
+## barplot, with stat = "summary" and position = "stack"
 #-------------------------------------------------------#
 ggplot(cod, aes(x = factor(Year), y = Depth)) +
   
-  geom_bar(aes(fill = factor(Stage)), stat = "identity") +  # what happens when you delete
+  geom_bar(aes(fill = factor(Stage)), 
+           stat = "summary",
+           fun = "median",
+           ) +  # what happens when you delete
                                                             # the stat specification?
   scale_fill_brewer(palette = "Set2", type = "div") 
 
@@ -63,7 +66,10 @@ ggplot(cod, aes(x = factor(Year), y = Depth)) +
 #-------------------------------------------------------#
 ggplot(cod, aes(x = factor(Year), y = Depth)) +
   
-  geom_bar(aes(fill = factor(Stage)), stat = "identity", position = "dodge") +
+  geom_bar(aes(fill = factor(Stage)), 
+           stat = "summary", 
+           fun = "median",
+           position = "dodge") +
   
   scale_fill_brewer(palette = "Set2", type = "div")  
 
@@ -90,4 +96,5 @@ p +
   scale_x_date(breaks = "2 months")                     # adjust the intervals
 
 p +
-  scale_x_date(breaks = "2 months", date_labels = "%b")  # get back month abbreviations
+  scale_x_date(breaks = "2 months", 
+               date_labels = "%b")                      # get back month abbreviations
