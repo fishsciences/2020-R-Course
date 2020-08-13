@@ -18,12 +18,13 @@ str(grades)           # calling str() on factors returns the number of levels
 as.integer(grades)    # factors are literally stored as integers under the hood
 
 # it's easiest to create the levels at the same time as you create the factors
-grades = factor(grades, levels = c("freshman", "sophomore", "junior", "senior"))
+grades = factor(grades, 
+                levels = c("freshman", "sophomore", "junior", "senior"))
 
-#########################################################
-# Factors when reading in data
-#########################################################
+#### Factors when reading in data
+#-------------------------------------------------------#
 ## The main place that factors trip people up is in the conversion to and from character.  Here we have some data that has an "?" (accidentally) in one of the numeric columns (the "MaxDepth" column):
+
 dl = read.csv("data/dive_log.csv", stringsAsFactors = TRUE, na.strings = "")
 
 str(dl)  #  Note all the factor columns
@@ -63,6 +64,59 @@ some.colors = c(rep(c("red", "yellow", "blue", "magenta", "green"), 2), "cyan")
 
 
 #  Change the "blue" label to "turqoise".
+
+
+#-------------------------------------------------------#
+# Factors & ggplot2
+#-------------------------------------------------------#
+
+# Lots of things get converted to factors under the hood in ggplot2 as it's the way that they get put onto a discrete scale.
+
+library(ggplot2)
+cod = read.csv("data/CodParasite.csv", stringsAsFactors = FALSE)
+str(cod)
+head(cod)
+
+## Reordering variables with factors
+#-------------------------------------------------------#
+cod2 = cod[complete.cases(cod) & cod$Intensity > 0, ]
+subsamp = sample(cod2$Sample, 20)
+cod2 = subset(cod2, Sample %in% subsamp)
+
+# numeric variables default to continuous
+ggplot(cod2,
+       aes(x = Sample,
+           y = Intensity)) +
+  geom_bar(stat = "identity")
+
+# you can add a discrete color scale by manually wrapping in factor()
+
+library(viridis)
+
+ggplot(cod2,
+       aes(x = factor(Sample), 
+           y = Intensity)) +
+  geom_bar(stat = "identity", 
+           aes(fill = factor(Sample))) +
+  scale_fill_brewer()
+
+# if you want to re-order the bars on a plot, it will get converted to factor anyway
+ggplot(cod2,
+       aes(x = reorder(Sample, Intensity),
+           y = Intensity)) +
+  geom_bar(stat = "identity")
+
+
+ggplot(cod2,
+       aes(y = reorder(Sample, Intensity),
+           x = Intensity)) +
+   geom_point(alpha = 0.75) 
+  # theme(axis.text.y = element_blank(),
+  #       axis.ticks.y = element_blank())
+
+
+
+
 
 
 
