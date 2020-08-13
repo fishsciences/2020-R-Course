@@ -91,3 +91,5 @@ outlier(x, type = "stdev", center_value = 10)
 ## own centering value, 2) the user to supply their own scaling value
 
 ## 3. Expand your tests. If you have errors or trouble, use browser()
+
+## 4. Test
