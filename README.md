@@ -52,7 +52,7 @@ Work through the [ggplot2 part II R script](https://github.com/fishsciences/2020
 
 ### Week 6: Scripting case studies: functions to summarize data, and advanced visualization.
 
-
+Complete the Week 6 [scripting assignment](https://github.com/fishsciences/2020-R-Course/blob/master/R/Week6_assignment.R).
 
 ### Resources
 Dates and times in R: Bonnie Dixon's [d-rug tutorial](https://www.noamross.net/archives/2014-02-10-using-times-and-dates-in-r-presentation-code/)
