@@ -60,14 +60,17 @@ Work through the [ggplot2 part II R script](https://github.com/fishsciences/2020
 
 Complete the Week 6 [scripting assignment](https://github.com/fishsciences/2020-R-Course/blob/master/R/Week6_assignment.R).
 
-### Resources
 
+### Resources
+---
 #### Specific topics
 Dates and times in R: Bonnie Dixon's [d-rug tutorial](https://www.noamross.net/archives/2014-02-10-using-times-and-dates-in-r-presentation-code/)
 
 
+---
+
 #### R communities and forums
-[MiR](https://medium.com/@doritolay/introducing-mir-a-community-for-underrepresented-users-of-r-7560def7d861): A Community for Underrepresented Minority Users of R (MiR)].
+[MiR](https://medium.com/@doritolay/introducing-mir-a-community-for-underrepresented-users-of-r-7560def7d861): A Community for Underrepresented Minority Users of R (MiR).
 
 [RStudio community forum](https://community.rstudio.com/) - a place to post R questions, can be a friendly alternative to Stack Overflow (especially for beginners).
 
