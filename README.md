@@ -23,9 +23,11 @@ No formal exercises this week - just download and install R and RStudio, and wat
 
 ### Week 2: Scripting; Data types and vectors
 
-Scripting: As shown in this week's [first video](https://youtu.be/R8CvvIiuV0I), download the zipped [course repository](https://github.com/fishsciences/2020-R-Course), unzip it, and open the RStudio project file.  Then run the `sea_mammal_EDA.R` script on your own machine.  Hint: you may need to install the two required libraries; see the code at the end of the video (~22:40) for help on that.
+Videos: [Intro to Scripting in R](https://youtu.be/R8CvvIiuV0I), and [Data Types and Vectors](https://youtu.be/LHZ7tBNE6B4).
 
-Vectors and data types: download the `vectors.R` script from the R/ folder, and work through it in RStudio.  The script will prompt you to try things on your own.
+Scripting exercise: Download the zipped [course repository](https://github.com/fishsciences/2020-R-Course), unzip it, and open the RStudio project file.  Then run the `sea_mammal_EDA.R` script on your own machine.  Hint: you may need to install the two required libraries; see the code at the end of the video (~22:40) for help on that.
+
+Vectors and data types exercise: download the `vectors.R` script from the R/ folder, and work through it in RStudio.  The script will prompt you to try things on your own.
 
 
 ### Week 3: Lists and logicals; manipulating data frames
